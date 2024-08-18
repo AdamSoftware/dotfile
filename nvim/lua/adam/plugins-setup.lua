@@ -162,17 +162,18 @@ return packer.startup(function(use)
 	})
 
 	-- UnUsable at the momment sorce code related
+	-- FIX: Don't know how this works now but it does
 
-	-- use({
-	-- 	"rest-nvim/rest.nvim",
-	-- 	run = function()
-	-- 		-- Run the build.lua script or equivalent command
-	-- 		require("luarocks").install()
-	-- 	end,
-	-- 	config = function()
-	-- 		require("rest-nvim").setup()
-	-- 	end,
-	-- })
+	use({
+		"rest-nvim/rest.nvim",
+		run = function()
+			-- Run the build.lua script or equivalent command
+			require("luarocks").install()
+		end,
+		config = function()
+			require("rest-nvim").setup()
+		end,
+	})
 
 	use({
 		"folke/todo-comments.nvim",
