@@ -1,8 +1,7 @@
-./github-copilot/
-./gh/
-./zed/
-./raycast/
-./stetic/
-./xbuild/
-./install_hererocks.sh
-./zed/
+/github-copilot
+/iterm2
+/raycast
+/stetic
+/xbuild
+/zed
+/install_hererocks.sh
