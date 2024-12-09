@@ -58,12 +58,6 @@ return packer.startup(function(use)
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
 
-	-- vs-code like icons
-	use("nvim-tree/nvim-web-devicons")
-
-	-- statusline
-	use("nvim-lualine/lualine.nvim")
-
 	-- fuzzy finding w/ telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
@@ -78,10 +72,47 @@ return packer.startup(function(use)
 	use("saadparwaiz1/cmp_luasnip") -- for autocompletion
 	use("rafamadriz/friendly-snippets") -- useful snippets
 
-	-- managing & installing lsp servers, linters & formatters
-	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
-	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
+	use({
+		"williamboman/mason.nvim",
+		config = function()
+			require("mason").setup({
+				ui = {
+					border = "rounded", -- Rounded borders for the UI
+					icons = {
+						package_installed = "✔️",
+						package_pending = "➜",
+						package_uninstalled = "✘",
+					},
+				},
+			})
 
+			-- Apply custom highlights for Mason UI
+			vim.api.nvim_set_hl(0, "MasonNormal", { bg = "NONE", fg = "#cdd6f4" })
+			vim.api.nvim_set_hl(0, "MasonBorder", { bg = "NONE", fg = "#cdd6f4" })
+		end,
+	})
+
+	-- Mason-LSPConfig: Bridges Mason with nvim-lspconfig
+	use({
+		"williamboman/mason-lspconfig.nvim",
+		config = function()
+			require("mason-lspconfig").setup({
+				ensure_installed = { "pyright", "tsserver", "rust_analyzer" }, -- Ensure these LSP servers are installed
+				automatic_installation = true, -- Automatically install configured servers
+			})
+		end,
+	})
+
+	-- nvim-lspconfig: Configure LSP servers
+	use({
+		"neovim/nvim-lspconfig",
+		config = function()
+			local lspconfig = require("lspconfig")
+			lspconfig.pyright.setup({})
+			lspconfig.tsserver.setup({})
+			lspconfig.rust_analyzer.setup({})
+		end,
+	})
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
@@ -115,8 +146,6 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
-
-	use("github/copilot.vim")
 
 	-- Database
 	use("tpope/vim-dadbod")
@@ -254,14 +283,89 @@ return packer.startup(function(use)
 		config = function()
 			-- Enable floating window for LazyGit
 			vim.api.nvim_set_var("lazygit_floating_window", true)
-			vim.api.nvim_set_var("lazygit_floating_window_winblend", 30) -- Set a more translucent background (higher values for more transparency)
+			vim.api.nvim_set_var("lazygit_floating_window_winblend", 10) -- Adjust transparency (0 for opaque, 100 for fully transparent)
 
-			-- Customize the floating window appearance
+			-- Customize the floating window appearance (you can adjust these settings)
 			vim.api.nvim_set_var("lazygit_floating_window_border", "rounded") -- Use rounded borders for a nicer look
 			vim.api.nvim_set_var("lazygit_floating_window_scaling", 0.9) -- Scale the window size (0.9 = 90% of the screen width/height)
 
 			-- Set up a keymap to open LazyGit in a floating window
 			vim.api.nvim_set_keymap("n", "<leader>gg", ":LazyGit<CR>", { noremap = true, silent = true })
+		end,
+	})
+
+	use("tpope/vim-fugitive")
+
+	use({
+		"kyazdani42/nvim-web-devicons", -- Adds filetype icons
+		"nvim-lualine/lualine.nvim", -- Status line plugin
+		config = function()
+			-- Lualine setup with icons enabled
+			require("lualine").setup({
+				options = { theme = "gruvbox" }, -- You can choose your preferred theme here
+				sections = {
+					lualine_b = { "branch" }, -- Show git branch
+					lualine_c = { "filename" }, -- File name with icon
+					lualine_x = { "filetype" }, -- Filetype with icon
+				},
+				tabline = {
+					lualine_a = { "buffers" }, -- Show buffers in tabline
+				},
+			})
+		end,
+	})
+
+	use("tpope/vim-repeat")
+
+	use({
+		"voldikss/vim-floaterm",
+		config = function()
+			-- Set terminal size and position
+			vim.g.floaterm_width = 0.8 -- 80% of screen width
+			vim.g.floaterm_height = 0.6 -- 60% of screen height
+			vim.g.floaterm_position = "center" -- Centered position
+
+			-- Make the terminal start with tmux
+			vim.g.floaterm_shell = "tmux" -- Start tmux inside the floating terminal
+
+			-- Make the terminal background fully transparent
+			vim.cmd([[
+      augroup FloatermBackground
+        autocmd!
+        autocmd FileType floaterm hi Floaterm guibg=NONE ctermbg=NONE   " Fully transparent background
+        autocmd FileType floaterm setlocal winblend=20  -- Subtle transparency level
+      augroup END
+    ]])
+
+			-- Set keybinding for toggling the floating terminal
+			vim.api.nvim_set_keymap("n", "<leader>t", ":FloatermToggle<CR>", { noremap = true, silent = true })
+		end,
+	})
+
+	use({
+		"akinsho/bufferline.nvim",
+		requires = "nvim-tree/nvim-web-devicons",
+		config = function()
+			require("bufferline").setup()
+		end,
+	})
+
+	require("nvim-treesitter.configs").setup({
+		playground = {
+			enable = true,
+			updatetime = 25, -- Debounced time for highlighting nodes in playground from source code
+			persist_queries = false, -- Whether to persist query across Neovim sessions
+		},
+	})
+
+	use({
+		"Exafunction/codeium.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"hrsh7th/nvim-cmp",
+		},
+		config = function()
+			require("codeium").setup({})
 		end,
 	})
 end)
