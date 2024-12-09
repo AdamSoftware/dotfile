@@ -1,4 +1,3 @@
--- auto install packer if not installed
 local ensure_packer = function()
 	local fn = vim.fn
 	local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
@@ -119,8 +118,6 @@ return packer.startup(function(use)
 
 	use("github/copilot.vim")
 
-	use("kdheepak/lazygit.nvim")
-
 	-- Database
 	use("tpope/vim-dadbod")
 	use("kristijanhusak/vim-dadbod-ui")
@@ -132,7 +129,18 @@ return packer.startup(function(use)
 	-- use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } })
 
 	use("rmagatti/goto-preview")
-	use("rcarriga/nvim-notify")
+
+	use({
+		"rcarriga/nvim-notify",
+		config = function()
+			require("notify").setup({
+				stages = "fade", -- Smooth fade effect
+				timeout = 1000, -- Set timeout in milliseconds
+			})
+			vim.notify = require("notify")
+		end,
+	})
+
 	use("MunifTanjim/nui.nvim")
 
 	use("folke/zen-mode.nvim")
@@ -188,4 +196,68 @@ return packer.startup(function(use)
 	if packer_bootstrap then
 		require("packer").sync()
 	end
+
+	use({
+		"startup-nvim/startup.nvim",
+		requires = {
+			"nvim-telescope/telescope.nvim",
+			"nvim-lua/plenary.nvim",
+			"nvim-telescope/telescope-file-browser.nvim",
+		},
+		config = function()
+			require("startup").setup()
+		end,
+	})
+
+	-- use({
+	-- 	"goolord/alpha-nvim",
+	-- 	config = function()
+	-- 		require("alpha").setup(require("alpha.themes.dashboard").config)
+	-- 	end,
+	-- })
+
+	-- use({
+	-- 	"goolord/alpha-nvim",
+	-- 	requires = {
+	-- 		"echasnovski/mini.icons",
+	-- 		"nvim-lua/plenary.nvim",
+	-- 	},
+	-- 	config = function()
+	-- 		require("alpha").setup(require("alpha.themes.dashboard").config)
+	-- 	end,
+	-- })
+
+	use({
+		"folke/noice.nvim",
+		requires = {
+			"MunifTanjim/nui.nvim", -- Required dependency
+			"rcarriga/nvim-notify", -- Optional, for notifications
+		},
+		config = function()
+			require("noice").setup({
+				cmdline = {
+					view = "cmdline_popup", -- Enables the floating command-line
+				},
+				popupmenu = {
+					enabled = true, -- Enables enhanced popupmenu
+				},
+				messages = {
+					enabled = true, -- Optional: enhances messages
+				},
+			})
+		end,
+	})
+
+	use({
+		"kdheepak/lazygit.nvim",
+		requires = { "nvim-lua/plenary.nvim" },
+		config = function()
+			-- Enable floating window for LazyGit
+			vim.api.nvim_set_var("lazygit_floating_window", true)
+			vim.api.nvim_set_var("lazygit_floating_window_winblend", 0) -- Adjust transparency as needed
+
+			-- Set up a keymap to open LazyGit in a floating window
+			vim.api.nvim_set_keymap("n", "<leader>gg", ":LazyGit<CR>", { noremap = true, silent = true })
+		end,
+	})
 end)
