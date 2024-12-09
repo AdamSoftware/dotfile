@@ -135,7 +135,7 @@ _G.packer_plugins = {
     url = "https://github.com/morhetz/gruvbox"
   },
   ["lazygit.nvim"] = {
-    config = { "\27LJ\2\nç\1\0\0\6\0\n\0\0216\0\0\0009\0\1\0009\0\2\0'\2\3\0+\3\2\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\4\0)\3\0\0B\0\3\0016\0\0\0009\0\1\0009\0\5\0'\2\6\0'\3\a\0'\4\b\0005\5\t\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\17:LazyGit<CR>\15<leader>gg\6n\20nvim_set_keymap%lazygit_floating_window_winblend\28lazygit_floating_window\17nvim_set_var\bapi\bvim\0" },
+    config = { "\27LJ\2\nè\2\0\0\6\0\r\1!6\0\0\0009\0\1\0009\0\2\0'\2\3\0+\3\2\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\4\0)\3\30\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\5\0'\3\6\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\a\0*\3\0\0B\0\3\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\n\0'\4\v\0005\5\f\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\17:LazyGit<CR>\15<leader>gg\6n\20nvim_set_keymap$lazygit_floating_window_scaling\frounded#lazygit_floating_window_border%lazygit_floating_window_winblend\28lazygit_floating_window\17nvim_set_var\bapi\bvim›³æÌ\25Ì™³ÿ\3\0" },
     loaded = true,
     path = "/Users/adamsteinberg/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
     url = "https://github.com/kdheepak/lazygit.nvim"
@@ -176,7 +176,7 @@ _G.packer_plugins = {
     url = "https://github.com/haishanh/night-owl.vim"
   },
   ["noice.nvim"] = {
-    config = { "\27LJ\2\n¹\1\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\rmessages\1\0\1\fenabled\2\14popupmenu\1\0\1\fenabled\2\fcmdline\1\0\3\rmessages\0\fcmdline\0\14popupmenu\0\1\0\1\tview\18cmdline_popup\nsetup\nnoice\frequire\0" },
+    config = { "\27LJ\2\n¹\1\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\rmessages\1\0\1\fenabled\2\14popupmenu\1\0\1\fenabled\2\fcmdline\1\0\3\fcmdline\0\14popupmenu\0\rmessages\0\1\0\1\tview\18cmdline_popup\nsetup\nnoice\frequire\0" },
     loaded = true,
     path = "/Users/adamsteinberg/.local/share/nvim/site/pack/packer/start/noice.nvim",
     url = "https://github.com/folke/noice.nvim"
@@ -212,7 +212,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-neotest/nvim-nio"
   },
   ["nvim-notify"] = {
-    config = { "\27LJ\2\nj\0\0\4\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0K\0\1\0\bvim\1\0\2\vstages\tfade\ftimeout\3è\a\nsetup\vnotify\frequire\0" },
+    config = { "\27LJ\2\nj\0\0\4\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0K\0\1\0\bvim\1\0\2\ftimeout\3è\a\vstages\tfade\nsetup\vnotify\frequire\0" },
     loaded = true,
     path = "/Users/adamsteinberg/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
@@ -266,7 +266,7 @@ _G.packer_plugins = {
     url = "https://github.com/sainnhe/sonokai"
   },
   ["ssr.nvim"] = {
-    config = { "\27LJ\2\nô\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\fkeymaps\1\0\5\nclose\6q\15next_match\6n\16replace_all\17<leader><cr>\20replace_confirm\t<cr>\15prev_match\6N\1\0\a\vborder\frounded\fkeymaps\0\18adjust_window\2\15max_height\3\25\14max_width\3x\15min_height\3\5\14min_width\0032\nsetup\bssr\frequire\0" },
+    config = { "\27LJ\2\nô\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\fkeymaps\1\0\5\16replace_all\17<leader><cr>\15next_match\6n\20replace_confirm\t<cr>\15prev_match\6N\nclose\6q\1\0\a\fkeymaps\0\18adjust_window\2\15max_height\3\25\14max_width\3x\15min_height\3\5\14min_width\0032\vborder\frounded\nsetup\bssr\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -381,30 +381,30 @@ if not vim.g.packer_custom_loader_enabled then
   vim.g.packer_custom_loader_enabled = true
 end
 
--- Config for: todo-comments.nvim
-time([[Config for todo-comments.nvim]], true)
-try_loadstring("\27LJ\2\n«\1\0\0\6\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\a\0'\4\b\0005\5\t\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\23:TodoTelescope<CR>\15<leader>ft\6n\20nvim_set_keymap\bapi\bvim\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
-time([[Config for todo-comments.nvim]], false)
--- Config for: nvim-notify
-time([[Config for nvim-notify]], true)
-try_loadstring("\27LJ\2\nj\0\0\4\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0K\0\1\0\bvim\1\0\2\vstages\tfade\ftimeout\3è\a\nsetup\vnotify\frequire\0", "config", "nvim-notify")
-time([[Config for nvim-notify]], false)
--- Config for: lazygit.nvim
-time([[Config for lazygit.nvim]], true)
-try_loadstring("\27LJ\2\nç\1\0\0\6\0\n\0\0216\0\0\0009\0\1\0009\0\2\0'\2\3\0+\3\2\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\4\0)\3\0\0B\0\3\0016\0\0\0009\0\1\0009\0\5\0'\2\6\0'\3\a\0'\4\b\0005\5\t\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\17:LazyGit<CR>\15<leader>gg\6n\20nvim_set_keymap%lazygit_floating_window_winblend\28lazygit_floating_window\17nvim_set_var\bapi\bvim\0", "config", "lazygit.nvim")
-time([[Config for lazygit.nvim]], false)
 -- Config for: startup.nvim
 time([[Config for startup.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0", "config", "startup.nvim")
 time([[Config for startup.nvim]], false)
--- Config for: noice.nvim
-time([[Config for noice.nvim]], true)
-try_loadstring("\27LJ\2\n¹\1\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\rmessages\1\0\1\fenabled\2\14popupmenu\1\0\1\fenabled\2\fcmdline\1\0\3\rmessages\0\fcmdline\0\14popupmenu\0\1\0\1\tview\18cmdline_popup\nsetup\nnoice\frequire\0", "config", "noice.nvim")
-time([[Config for noice.nvim]], false)
+-- Config for: lazygit.nvim
+time([[Config for lazygit.nvim]], true)
+try_loadstring("\27LJ\2\nè\2\0\0\6\0\r\1!6\0\0\0009\0\1\0009\0\2\0'\2\3\0+\3\2\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\4\0)\3\30\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\5\0'\3\6\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\a\0*\3\0\0B\0\3\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\n\0'\4\v\0005\5\f\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\17:LazyGit<CR>\15<leader>gg\6n\20nvim_set_keymap$lazygit_floating_window_scaling\frounded#lazygit_floating_window_border%lazygit_floating_window_winblend\28lazygit_floating_window\17nvim_set_var\bapi\bvim›³æÌ\25Ì™³ÿ\3\0", "config", "lazygit.nvim")
+time([[Config for lazygit.nvim]], false)
 -- Config for: rest.nvim
 time([[Config for rest.nvim]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14rest-nvim\frequire\0", "config", "rest.nvim")
 time([[Config for rest.nvim]], false)
+-- Config for: noice.nvim
+time([[Config for noice.nvim]], true)
+try_loadstring("\27LJ\2\n¹\1\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\rmessages\1\0\1\fenabled\2\14popupmenu\1\0\1\fenabled\2\fcmdline\1\0\3\fcmdline\0\14popupmenu\0\rmessages\0\1\0\1\tview\18cmdline_popup\nsetup\nnoice\frequire\0", "config", "noice.nvim")
+time([[Config for noice.nvim]], false)
+-- Config for: nvim-notify
+time([[Config for nvim-notify]], true)
+try_loadstring("\27LJ\2\nj\0\0\4\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0K\0\1\0\bvim\1\0\2\ftimeout\3è\a\vstages\tfade\nsetup\vnotify\frequire\0", "config", "nvim-notify")
+time([[Config for nvim-notify]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+try_loadstring("\27LJ\2\n«\1\0\0\6\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\a\0'\4\b\0005\5\t\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\23:TodoTelescope<CR>\15<leader>ft\6n\20nvim_set_keymap\bapi\bvim\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
+time([[Config for todo-comments.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]

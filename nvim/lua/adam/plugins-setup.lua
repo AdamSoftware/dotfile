@@ -254,7 +254,11 @@ return packer.startup(function(use)
 		config = function()
 			-- Enable floating window for LazyGit
 			vim.api.nvim_set_var("lazygit_floating_window", true)
-			vim.api.nvim_set_var("lazygit_floating_window_winblend", 0) -- Adjust transparency as needed
+			vim.api.nvim_set_var("lazygit_floating_window_winblend", 30) -- Set a more translucent background (higher values for more transparency)
+
+			-- Customize the floating window appearance
+			vim.api.nvim_set_var("lazygit_floating_window_border", "rounded") -- Use rounded borders for a nicer look
+			vim.api.nvim_set_var("lazygit_floating_window_scaling", 0.9) -- Scale the window size (0.9 = 90% of the screen width/height)
 
 			-- Set up a keymap to open LazyGit in a floating window
 			vim.api.nvim_set_keymap("n", "<leader>gg", ":LazyGit<CR>", { noremap = true, silent = true })
