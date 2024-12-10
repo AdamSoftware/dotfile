@@ -348,14 +348,6 @@ return packer.startup(function(use)
 		end,
 	})
 
-	use({
-		"akinsho/bufferline.nvim",
-		requires = "nvim-tree/nvim-web-devicons",
-		config = function()
-			require("bufferline").setup()
-		end,
-	})
-
 	require("nvim-treesitter.configs").setup({
 		playground = {
 			enable = true,
@@ -374,4 +366,30 @@ return packer.startup(function(use)
 			require("codeium").setup({})
 		end,
 	})
+
+	use({
+		"akinsho/bufferline.nvim",
+		requires = "kyazdani42/nvim-web-devicons", -- For file icons
+		config = function()
+			-- Bufferline setup
+			require("bufferline").setup({
+				options = {
+					numbers = "none",
+					close_command = "bdelete! %d",
+					right_mouse_command = "bdelete! %d",
+					left_mouse_command = "buffer %d",
+					separator_style = "slant",
+					always_show_bufferline = true,
+					diagnostics = "nvim_lsp",
+				},
+			})
+
+			-- Key mappings
+			vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>")
+			vim.keymap.set("n", "<Leader>c", ":enew<CR>")
+			vim.keymap.set("n", "<Leader>bc", ":bdelete<CR>")
+		end,
+	})
+
+	-- I still cannot get the dapUI too work
 end)

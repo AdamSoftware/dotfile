@@ -85,7 +85,7 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["bufferline.nvim"] = {
-    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15bufferline\frequire\0" },
+    config = { "\27LJ\2\n≤\3\0\0\5\0\16\0\0306\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\0016\0\6\0009\0\a\0009\0\b\0'\2\t\0'\3\n\0'\4\v\0B\0\4\0016\0\6\0009\0\a\0009\0\b\0'\2\t\0'\3\f\0'\4\r\0B\0\4\0016\0\6\0009\0\a\0009\0\b\0'\2\t\0'\3\14\0'\4\15\0B\0\4\1K\0\1\0\17:bdelete<CR>\15<Leader>bc\14:enew<CR>\14<Leader>c\29:BufferLineCycleNext<CR>\n<Tab>\6n\bset\vkeymap\bvim\foptions\1\0\1\foptions\0\1\0\a\18close_command\16bdelete! %d\27always_show_bufferline\2\fnumbers\tnone\20separator_style\nslant\16diagnostics\rnvim_lsp\23left_mouse_command\14buffer %d\24right_mouse_command\16bdelete! %d\nsetup\15bufferline\frequire\0" },
     loaded = true,
     path = "/Users/adamsteinberg/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
@@ -174,7 +174,7 @@ _G.packer_plugins = {
     url = "https://github.com/jayp0521/mason-null-ls.nvim"
   },
   ["mason.nvim"] = {
-    config = { "\27LJ\2\n»\2\0\0\5\0\15\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0)\2\0\0'\3\v\0005\4\f\0B\0\4\0016\0\b\0009\0\t\0009\0\n\0)\2\0\0'\3\r\0005\4\14\0B\0\4\1K\0\1\0\1\0\2\abg\tNONE\afg\f#cdd6f4\16MasonBorder\1\0\2\abg\tNONE\afg\f#cdd6f4\16MasonNormal\16nvim_set_hl\bapi\bvim\aui\1\0\1\aui\0\nicons\1\0\3\24package_uninstalled\b‚úò\22package_installed\v‚úîÔ∏è\20package_pending\b‚ûú\1\0\2\vborder\frounded\nicons\0\nsetup\nmason\frequire\0" },
+    config = { "\27LJ\2\n»\2\0\0\5\0\15\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0)\2\0\0'\3\v\0005\4\f\0B\0\4\0016\0\b\0009\0\t\0009\0\n\0)\2\0\0'\3\r\0005\4\14\0B\0\4\1K\0\1\0\1\0\2\abg\tNONE\afg\f#cdd6f4\16MasonBorder\1\0\2\abg\tNONE\afg\f#cdd6f4\16MasonNormal\16nvim_set_hl\bapi\bvim\aui\1\0\1\aui\0\nicons\1\0\3\24package_uninstalled\b‚úò\20package_pending\b‚ûú\22package_installed\v‚úîÔ∏è\1\0\2\vborder\frounded\nicons\0\nsetup\nmason\frequire\0" },
     loaded = true,
     path = "/Users/adamsteinberg/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
@@ -185,7 +185,7 @@ _G.packer_plugins = {
     url = "https://github.com/haishanh/night-owl.vim"
   },
   ["noice.nvim"] = {
-    config = { "\27LJ\2\nπ\1\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\rmessages\1\0\1\fenabled\2\14popupmenu\1\0\1\fenabled\2\fcmdline\1\0\3\fcmdline\0\14popupmenu\0\rmessages\0\1\0\1\tview\18cmdline_popup\nsetup\nnoice\frequire\0" },
+    config = { "\27LJ\2\nπ\1\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\rmessages\1\0\1\fenabled\2\14popupmenu\1\0\1\fenabled\2\fcmdline\1\0\3\rmessages\0\fcmdline\0\14popupmenu\0\1\0\1\tview\18cmdline_popup\nsetup\nnoice\frequire\0" },
     loaded = true,
     path = "/Users/adamsteinberg/.local/share/nvim/site/pack/packer/start/noice.nvim",
     url = "https://github.com/folke/noice.nvim"
@@ -222,7 +222,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-neotest/nvim-nio"
   },
   ["nvim-notify"] = {
-    config = { "\27LJ\2\nj\0\0\4\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0K\0\1\0\bvim\1\0\2\vstages\tfade\ftimeout\3Ë\a\nsetup\vnotify\frequire\0" },
+    config = { "\27LJ\2\nj\0\0\4\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0K\0\1\0\bvim\1\0\2\ftimeout\3Ë\a\vstages\tfade\nsetup\vnotify\frequire\0" },
     loaded = true,
     path = "/Users/adamsteinberg/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
@@ -276,7 +276,7 @@ _G.packer_plugins = {
     url = "https://github.com/sainnhe/sonokai"
   },
   ["ssr.nvim"] = {
-    config = { "\27LJ\2\nÙ\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\fkeymaps\1\0\5\15prev_match\6N\nclose\6q\16replace_all\17<leader><cr>\15next_match\6n\20replace_confirm\t<cr>\1\0\a\vborder\frounded\14min_width\0032\fkeymaps\0\18adjust_window\2\15max_height\3\25\14max_width\3x\15min_height\3\5\nsetup\bssr\frequire\0" },
+    config = { "\27LJ\2\nÙ\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\fkeymaps\1\0\5\nclose\6q\16replace_all\17<leader><cr>\20replace_confirm\t<cr>\15next_match\6n\15prev_match\6N\1\0\a\15max_height\3\25\14max_width\3x\vborder\frounded\14min_width\0032\15min_height\3\5\fkeymaps\0\18adjust_window\2\nsetup\bssr\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -407,54 +407,54 @@ if not vim.g.packer_custom_loader_enabled then
   vim.g.packer_custom_loader_enabled = true
 end
 
--- Config for: mason-lspconfig.nvim
-time([[Config for mason-lspconfig.nvim]], true)
-try_loadstring("\27LJ\2\n™\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21ensure_installed\1\0\2\27automatic_installation\2\21ensure_installed\0\1\4\0\0\fpyright\rtsserver\18rust_analyzer\nsetup\20mason-lspconfig\frequire\0", "config", "mason-lspconfig.nvim")
-time([[Config for mason-lspconfig.nvim]], false)
--- Config for: nvim-notify
-time([[Config for nvim-notify]], true)
-try_loadstring("\27LJ\2\nj\0\0\4\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0K\0\1\0\bvim\1\0\2\vstages\tfade\ftimeout\3Ë\a\nsetup\vnotify\frequire\0", "config", "nvim-notify")
-time([[Config for nvim-notify]], false)
--- Config for: codeium.nvim
-time([[Config for codeium.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\fcodeium\frequire\0", "config", "codeium.nvim")
-time([[Config for codeium.nvim]], false)
--- Config for: rest.nvim
-time([[Config for rest.nvim]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14rest-nvim\frequire\0", "config", "rest.nvim")
-time([[Config for rest.nvim]], false)
 -- Config for: todo-comments.nvim
 time([[Config for todo-comments.nvim]], true)
 try_loadstring("\27LJ\2\n´\1\0\0\6\0\n\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\a\0'\4\b\0005\5\t\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\23:TodoTelescope<CR>\15<leader>ft\6n\20nvim_set_keymap\bapi\bvim\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
 time([[Config for todo-comments.nvim]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-try_loadstring("\27LJ\2\n~\0\0\4\0\6\0\0166\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\0014\3\0\0B\1\2\0019\1\4\0009\1\3\0014\3\0\0B\1\2\0019\1\5\0009\1\3\0014\3\0\0B\1\2\1K\0\1\0\18rust_analyzer\rtsserver\nsetup\fpyright\14lspconfig\frequire\0", "config", "nvim-lspconfig")
-time([[Config for nvim-lspconfig]], false)
--- Config for: mason.nvim
-time([[Config for mason.nvim]], true)
-try_loadstring("\27LJ\2\n»\2\0\0\5\0\15\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0)\2\0\0'\3\v\0005\4\f\0B\0\4\0016\0\b\0009\0\t\0009\0\n\0)\2\0\0'\3\r\0005\4\14\0B\0\4\1K\0\1\0\1\0\2\abg\tNONE\afg\f#cdd6f4\16MasonBorder\1\0\2\abg\tNONE\afg\f#cdd6f4\16MasonNormal\16nvim_set_hl\bapi\bvim\aui\1\0\1\aui\0\nicons\1\0\3\24package_uninstalled\b‚úò\22package_installed\v‚úîÔ∏è\20package_pending\b‚ûú\1\0\2\vborder\frounded\nicons\0\nsetup\nmason\frequire\0", "config", "mason.nvim")
-time([[Config for mason.nvim]], false)
--- Config for: startup.nvim
-time([[Config for startup.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0", "config", "startup.nvim")
-time([[Config for startup.nvim]], false)
--- Config for: bufferline.nvim
-time([[Config for bufferline.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
-time([[Config for bufferline.nvim]], false)
--- Config for: lazygit.nvim
-time([[Config for lazygit.nvim]], true)
-try_loadstring("\27LJ\2\nÏ\4\0\0\6\0\25\1A6\0\0\0009\0\1\0009\0\2\0'\2\3\0+\3\2\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\4\0)\3\n\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\5\0'\3\6\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\a\0*\3\0\0B\0\3\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\n\0'\4\v\0005\5\f\0B\0\5\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\r\0'\4\14\0005\5\15\0B\0\5\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\16\0'\4\17\0005\5\18\0B\0\5\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\19\0'\4\20\0005\5\21\0B\0\5\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\22\0'\4\23\0005\5\24\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\v<C-w>l\n<C-l>\1\0\2\fnoremap\2\vsilent\2\v<C-w>k\n<C-k>\1\0\2\fnoremap\2\vsilent\2\v<C-w>j\n<C-j>\1\0\2\fnoremap\2\vsilent\2\v<C-w>h\n<C-h>\1\0\2\fnoremap\2\vsilent\2\17:LazyGit<CR>\15<leader>gg\6n\20nvim_set_keymap$lazygit_floating_window_scaling\frounded#lazygit_floating_window_border%lazygit_floating_window_winblend\28lazygit_floating_window\17nvim_set_var\bapi\bvimõ≥ÊÃ\25Ãô≥ˇ\3\0", "config", "lazygit.nvim")
-time([[Config for lazygit.nvim]], false)
--- Config for: noice.nvim
-time([[Config for noice.nvim]], true)
-try_loadstring("\27LJ\2\nπ\1\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\rmessages\1\0\1\fenabled\2\14popupmenu\1\0\1\fenabled\2\fcmdline\1\0\3\fcmdline\0\14popupmenu\0\rmessages\0\1\0\1\tview\18cmdline_popup\nsetup\nnoice\frequire\0", "config", "noice.nvim")
-time([[Config for noice.nvim]], false)
 -- Config for: vim-floaterm
 time([[Config for vim-floaterm]], true)
 try_loadstring("\27LJ\2\n≥\4\0\0\6\0\16\2\0296\0\0\0009\0\1\0*\1\0\0=\1\2\0006\0\0\0009\0\1\0*\1\1\0=\1\3\0006\0\0\0009\0\1\0'\1\5\0=\1\4\0006\0\0\0009\0\1\0'\1\a\0=\1\6\0006\0\0\0009\0\b\0'\2\t\0B\0\2\0016\0\0\0009\0\n\0009\0\v\0'\2\f\0'\3\r\0'\4\14\0005\5\15\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\24:FloatermToggle<CR>\14<leader>t\6n\20nvim_set_keymap\bapiâ\2      augroup FloatermBackground\n        autocmd!\n        autocmd FileType floaterm hi Floaterm guibg=NONE ctermbg=NONE   \" Fully transparent background\n        autocmd FileType floaterm setlocal winblend=20  -- Subtle transparency level\n      augroup END\n    \bcmd\ttmux\19floaterm_shell\vcenter\22floaterm_position\20floaterm_height\19floaterm_width\6g\bvimµÊÃô\19ô≥¶ˇ\3ÁÃô≥\6≥Êåˇ\3\0", "config", "vim-floaterm")
 time([[Config for vim-floaterm]], false)
+-- Config for: startup.nvim
+time([[Config for startup.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fstartup\frequire\0", "config", "startup.nvim")
+time([[Config for startup.nvim]], false)
+-- Config for: codeium.nvim
+time([[Config for codeium.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\fcodeium\frequire\0", "config", "codeium.nvim")
+time([[Config for codeium.nvim]], false)
+-- Config for: lazygit.nvim
+time([[Config for lazygit.nvim]], true)
+try_loadstring("\27LJ\2\nÏ\4\0\0\6\0\25\1A6\0\0\0009\0\1\0009\0\2\0'\2\3\0+\3\2\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\4\0)\3\n\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\5\0'\3\6\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\a\0*\3\0\0B\0\3\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\n\0'\4\v\0005\5\f\0B\0\5\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\r\0'\4\14\0005\5\15\0B\0\5\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\16\0'\4\17\0005\5\18\0B\0\5\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\19\0'\4\20\0005\5\21\0B\0\5\0016\0\0\0009\0\1\0009\0\b\0'\2\t\0'\3\22\0'\4\23\0005\5\24\0B\0\5\1K\0\1\0\1\0\2\fnoremap\2\vsilent\2\v<C-w>l\n<C-l>\1\0\2\fnoremap\2\vsilent\2\v<C-w>k\n<C-k>\1\0\2\fnoremap\2\vsilent\2\v<C-w>j\n<C-j>\1\0\2\fnoremap\2\vsilent\2\v<C-w>h\n<C-h>\1\0\2\fnoremap\2\vsilent\2\17:LazyGit<CR>\15<leader>gg\6n\20nvim_set_keymap$lazygit_floating_window_scaling\frounded#lazygit_floating_window_border%lazygit_floating_window_winblend\28lazygit_floating_window\17nvim_set_var\bapi\bvimõ≥ÊÃ\25Ãô≥ˇ\3\0", "config", "lazygit.nvim")
+time([[Config for lazygit.nvim]], false)
+-- Config for: mason.nvim
+time([[Config for mason.nvim]], true)
+try_loadstring("\27LJ\2\n»\2\0\0\5\0\15\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\2B\0\2\0016\0\b\0009\0\t\0009\0\n\0)\2\0\0'\3\v\0005\4\f\0B\0\4\0016\0\b\0009\0\t\0009\0\n\0)\2\0\0'\3\r\0005\4\14\0B\0\4\1K\0\1\0\1\0\2\abg\tNONE\afg\f#cdd6f4\16MasonBorder\1\0\2\abg\tNONE\afg\f#cdd6f4\16MasonNormal\16nvim_set_hl\bapi\bvim\aui\1\0\1\aui\0\nicons\1\0\3\24package_uninstalled\b‚úò\20package_pending\b‚ûú\22package_installed\v‚úîÔ∏è\1\0\2\vborder\frounded\nicons\0\nsetup\nmason\frequire\0", "config", "mason.nvim")
+time([[Config for mason.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+try_loadstring("\27LJ\2\n~\0\0\4\0\6\0\0166\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\0014\3\0\0B\1\2\0019\1\4\0009\1\3\0014\3\0\0B\1\2\0019\1\5\0009\1\3\0014\3\0\0B\1\2\1K\0\1\0\18rust_analyzer\rtsserver\nsetup\fpyright\14lspconfig\frequire\0", "config", "nvim-lspconfig")
+time([[Config for nvim-lspconfig]], false)
+-- Config for: nvim-notify
+time([[Config for nvim-notify]], true)
+try_loadstring("\27LJ\2\nj\0\0\4\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0K\0\1\0\bvim\1\0\2\ftimeout\3Ë\a\vstages\tfade\nsetup\vnotify\frequire\0", "config", "nvim-notify")
+time([[Config for nvim-notify]], false)
+-- Config for: rest.nvim
+time([[Config for rest.nvim]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14rest-nvim\frequire\0", "config", "rest.nvim")
+time([[Config for rest.nvim]], false)
+-- Config for: mason-lspconfig.nvim
+time([[Config for mason-lspconfig.nvim]], true)
+try_loadstring("\27LJ\2\n™\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21ensure_installed\1\0\2\27automatic_installation\2\21ensure_installed\0\1\4\0\0\fpyright\rtsserver\18rust_analyzer\nsetup\20mason-lspconfig\frequire\0", "config", "mason-lspconfig.nvim")
+time([[Config for mason-lspconfig.nvim]], false)
+-- Config for: bufferline.nvim
+time([[Config for bufferline.nvim]], true)
+try_loadstring("\27LJ\2\n≤\3\0\0\5\0\16\0\0306\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\0016\0\6\0009\0\a\0009\0\b\0'\2\t\0'\3\n\0'\4\v\0B\0\4\0016\0\6\0009\0\a\0009\0\b\0'\2\t\0'\3\f\0'\4\r\0B\0\4\0016\0\6\0009\0\a\0009\0\b\0'\2\t\0'\3\14\0'\4\15\0B\0\4\1K\0\1\0\17:bdelete<CR>\15<Leader>bc\14:enew<CR>\14<Leader>c\29:BufferLineCycleNext<CR>\n<Tab>\6n\bset\vkeymap\bvim\foptions\1\0\1\foptions\0\1\0\a\18close_command\16bdelete! %d\27always_show_bufferline\2\fnumbers\tnone\20separator_style\nslant\16diagnostics\rnvim_lsp\23left_mouse_command\14buffer %d\24right_mouse_command\16bdelete! %d\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
+time([[Config for bufferline.nvim]], false)
+-- Config for: noice.nvim
+time([[Config for noice.nvim]], true)
+try_loadstring("\27LJ\2\nπ\1\0\0\4\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\rmessages\1\0\1\fenabled\2\14popupmenu\1\0\1\fenabled\2\fcmdline\1\0\3\rmessages\0\fcmdline\0\14popupmenu\0\1\0\1\tview\18cmdline_popup\nsetup\nnoice\frequire\0", "config", "noice.nvim")
+time([[Config for noice.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]
