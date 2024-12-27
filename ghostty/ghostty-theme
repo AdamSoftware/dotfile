@@ -1,0 +1,38 @@
+background = #030b16
+foreground = #e9def2
+
+
+
+
+# makes cursor neon green
+cursor-color = #7efba5
+
+# black (dark green for background contrast)
+palette = 0=#002200 
+palette = 8=#005500
+
+# red (muted forest green for variety)
+palette = 1=#FF00FF
+palette = 9=#FF00FF
+
+# green (neon green as the central focus)
+palette = 2=#39ff14
+palette = 10=#76ff6b
+
+
+# blue (emerald green to keep within green tones)
+palette = 4=#1E90FF
+palette = 12=#66ff99
+
+# purple (teal green to mimic a soft green hue)
+palette = 5=#33aa88
+palette = 13=#66ffcc
+
+# aqua (bright seafoam green for variation)
+palette = 6=#FF00FF
+palette = 14=#33ffcc
+
+# white (light mint green for high visibility)
+palette = 7=#7efba5
+palette = 15=#ffffff
+

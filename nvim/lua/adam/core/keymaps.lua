@@ -71,6 +71,9 @@ keymap.set("n", "<leader>gr", "<cmd>lua require('goto-preview').goto_preview_ref
 keymap.set("n", "<leader>rr", "<cmd>Rest run<cr>")
 keymap.set("n", "<leader>rl", "<cmd>Rest run last<cr>")
 
+-- this will close the current buffer that you are on
+keymap.set("n", "<leader>bd", ":bd<CR>")
+
 vim.keymap.set("n", "<Leader>f", function()
 	vim.lsp.buf.format({ async = true })
 end, { buffer = bufnr })

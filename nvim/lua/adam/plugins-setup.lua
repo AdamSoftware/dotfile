@@ -391,5 +391,9 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- Warning:: this doesn't work yetspotify plugin
+
+	-- going to use the music-controler for music control
+
 	-- I still cannot get the dapUI too work
 end)
