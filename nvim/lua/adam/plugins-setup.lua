@@ -38,6 +38,8 @@ return packer.startup(function(use)
 
 	use("morhetz/gruvbox")
 
+	use("github/copilot.vim")
+
 	use("haishanh/night-owl.vim")
 
 	use("sainnhe/sonokai")
@@ -63,7 +65,7 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
 
 	-- autocompletion
-	use("hrsh7th/nvim-cmp") -- completion plugin
+	use("hrsh7th/nvim-cmp") -- completion pluginnvim.lspconfig
 	use("hrsh7th/cmp-buffer") -- source for text in buffer
 	use("hrsh7th/cmp-path") -- source for file system paths
 
@@ -97,7 +99,7 @@ return packer.startup(function(use)
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "pyright", "tsserver", "rust_analyzer" }, -- Ensure these LSP servers are installed
+				ensure_installed = { "pyright", "ts_ls", "rust_analyzer" }, -- Ensure these LSP servers are installed
 				automatic_installation = true, -- Automatically install configured servers
 			})
 		end,
@@ -109,7 +111,7 @@ return packer.startup(function(use)
 		config = function()
 			local lspconfig = require("lspconfig")
 			lspconfig.pyright.setup({})
-			lspconfig.tsserver.setup({})
+			lspconfig.ts_ls.setup({})
 			lspconfig.rust_analyzer.setup({})
 		end,
 	})
@@ -164,15 +166,13 @@ return packer.startup(function(use)
 		config = function()
 			require("notify").setup({
 				stages = "fade", -- Smooth fade effect
-				timeout = 1000, -- Set timeout in milliseconds
+				timeout = 500, -- Set timeout in milliseconds
 			})
 			vim.notify = require("notify")
 		end,
 	})
 
 	use("MunifTanjim/nui.nvim")
-
-	use("folke/zen-mode.nvim")
 
 	--[[ use("Exafunction/codeium.vim") ]]
 

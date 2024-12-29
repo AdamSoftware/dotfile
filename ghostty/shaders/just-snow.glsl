@@ -5,6 +5,8 @@
 // Simple (but not cheap) snow made from multiple parallax layers with randomly positioned 
 // flakes and directions. Also includes a DoF effect. Pan around with mouse.
 
+// WARNING: this will kill  your computer if you try to run it run with caution or
+// WARNING: crazy high end computer thk you for lisening Aps stronk
 #define LIGHT_SNOW // Comment this out for a blizzard
 
 #ifdef LIGHT_SNOW

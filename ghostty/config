@@ -16,7 +16,9 @@
 # 
 # Cycles are not allowed. If a cycle is detected, an error will be logged and
 # the configuration file will be ignored.
-config-file = ghostty-theme
+ config-file = ghostty-theme
+
+#theme = "iTerm2 Tango Dark"
 
 # Some shaders can be found in this repo, they're usually uploaded to discord
 # https://github.com/hackrmomo/ghostty-shaders
@@ -113,7 +115,7 @@ window-padding-x = 4,2
 # `window-padding-y = 2` will set both paddings to 2.
 window-padding-y = 6,0
 
-font-family = "JetBrainsMono Nerd Font"
+font-family = "MesloLGS NF"
 font-size = 15
 
 # Valid values:
@@ -198,6 +200,5 @@ keybind = super+r=reload_config
 # keybind = super+k=clear_screen
 
 background-opacity = "0.77"
-
 
 

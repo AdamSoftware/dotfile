@@ -8,7 +8,7 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps
 ---------------------
-
+---
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
@@ -70,6 +70,13 @@ keymap.set("n", "<leader>gr", "<cmd>lua require('goto-preview').goto_preview_ref
 
 keymap.set("n", "<leader>rr", "<cmd>Rest run<cr>")
 keymap.set("n", "<leader>rl", "<cmd>Rest run last<cr>")
+
+-- Map <leader>F to open a prompt for find and replace in the whole file
+vim.keymap.set("n", "<leader>F", function()
+	local find = vim.fn.input("Find: ")
+	local replace = vim.fn.input("Replace with: ")
+	vim.cmd(string.format("%%s/%s/%s/gc", find, replace))
+end)
 
 -- this will close the current buffer that you are on
 keymap.set("n", "<leader>bd", ":bd<CR>")
