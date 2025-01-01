@@ -35,6 +35,13 @@
 # custom-shader = shaders/just-snow.glsl
 # custom-shader = shaders/starfield-colors.glsl
 # custom-shader = shaders/starfield.glsl
+# WARNING: this one still does not work
+#
+# custom-shader = shaders/fire.glsl
+#
+# WARNING: I really got to figure out why these don't work
+#
+#custom-shader = shaders/smoke-and-ghost.glsl
 
 # The command to run, usually a shell. If this is not an absolute path, it'll
 # be looked up in the `PATH`. If this is not set, a default will be looked up
