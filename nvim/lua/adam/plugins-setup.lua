@@ -234,9 +234,18 @@ return packer.startup(function(use)
 			"nvim-telescope/telescope-file-browser.nvim",
 		},
 		config = function()
-			require("startup").setup()
+			require("startup").setup({ theme = "dashboard" })
 		end,
 	})
+
+	-- this is going to be the alpha startup screen
+
+	-- use({
+	-- 	"goolord/alpha-nvim",
+	-- 	config = function()
+	-- 		require("alpha").setup(require("alpha.themes.dashboard").config)
+	-- 	end,
+	-- })
 
 	-- use({
 	-- 	"goolord/alpha-nvim",
