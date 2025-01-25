@@ -34,6 +34,14 @@ Install Thefuck by running this command:
 
 brew install thefuck
 
+Install yabi:
+
+brew install yabi
+
+Install bat:
+
+brew install bat
+
 Install additional tools like git, curl, and zsh by running this command:
 
 brew install git curl zsh
